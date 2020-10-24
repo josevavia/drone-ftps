@@ -60,10 +60,10 @@ done
 echo 'Plugin exclude:'
 echo "$PLUGIN_EXCLUDE"
 
-echp 'Plugin exclude str:'
+echo 'Plugin exclude str:'
 echo "$PLUGIN_EXCLUDE_STR"
 
-echp 'Only newer:'
+echo 'Only newer:'
 echo "$PLUGIN_ONLY_NEWER"
 
 

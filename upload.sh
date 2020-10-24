@@ -56,6 +56,18 @@ for i in "${in_arr[@]}"; do
     PLUGIN_INCLUDE_STR="$PLUGIN_INCLUDE_STR -i $i"
 done
 
+
+echo 'Plugin exclude:'
+echo "$PLUGIN_EXCLUDE"
+
+echp 'Plugin exclude str:'
+echo "$PLUGIN_EXCLUDE_STR"
+
+echp 'Only newer:'
+echo "$PLUGIN_ONLY_NEWER"
+
+
+
 lftp -e "set xfer:log 1; \
   set ftp:ssl-allow $PLUGIN_SECURE; \
   set ftp:ssl-force $PLUGIN_SECURE; \
